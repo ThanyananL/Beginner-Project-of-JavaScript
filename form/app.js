@@ -5,7 +5,7 @@ const password1 = document.getElementById('password');
 const password2 = document.getElementById('re-password');
 
 form.addEventListener('submit', (e) => {
-    e.preventDefault();
+    e.preventDefault(); //re 0
     checkInput([username, email, password1, password2]);
     if (!validateEmail(email.value.trim())) {
         showerror(email, 'อีเมลไม่ถูกต้อง');
